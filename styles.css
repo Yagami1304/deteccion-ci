@@ -1,0 +1,134 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://example.com/medical-pattern.png'); /* Reemplaza con la URL de tu patrón de fondo */
+    background-size: cover;
+    
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 50px; /* Incrementar tamaño */
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 720px; /* Incrementar ancho */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    color: #0066cc;
+}
+
+.question {
+    margin: 20px 0;
+    text-align: left; /* Alinea las preguntas a la izquierda para mayor legibilidad */
+}
+
+.question label {
+    font-size: 22px; /* Tamaño de letra aumentado */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.question img {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #004c99;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.safe {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Animación al seleccionar una respuesta */
+input[type="radio"]:checked + label {
+    animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Animación para cambiar de página de preguntas */
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(-100%); opacity: 0; }
+}
+
+/* Estilo y animación para la recomendación */
+.result {
+    display: none;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.answer {
+    padding: 15px;
+    border: 2px solid #0066cc;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.answer:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+.answer.selected {
+    background-color: #28a745;
+    color: #ffffff;
+    border-color: #28a745;
+}
