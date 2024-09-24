@@ -1,115 +1,39 @@
+/* Fondo animado */
 body {
-    background-color: #f5f5f5;
-    font-family: Arial, sans-serif;
+    background: url('https://img.freepik.com/vector-gratis/fondo-estampado-medico-limpio_53876-116871.jpg?t=st=1727205283~exp=1727208883~hmac=17b894a87927a71b3f2a7ce81b98ea8a6dfb8be21edc9abd7314347624c06a90&w=1380') no-repeat center center fixed; /* Reemplaza con tu URL de imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('https://example.com/medical-pattern.png'); /* Reemplaza con la URL de tu patrón de fondo */
-    background-size: cover;
-    
 }
+
 
 .container {
     background-color: #ffffff;
-    padding: 30px 50px; /* Incrementar tamaño */
+    padding: 30px 50px;
     border-radius: 10px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-    max-width: 720px; /* Incrementar ancho */
+    max-width: 720px;
     text-align: center;
     transition: transform 0.3s ease;
 }
 
 h1 {
     color: #0066cc;
+    margin-bottom: 20px;
 }
 
 .question {
     margin: 20px 0;
-    text-align: left; /* Alinea las preguntas a la izquierda para mayor legibilidad */
+    text-align: left;
 }
 
 .question label {
-    font-size: 22px; /* Tamaño de letra aumentado */
+    font-size: 22px;
     display: block;
     margin-bottom: 10px;
-}
-
-.question img {
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #0066cc;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #004c99;
-}
-
-.result {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.safe {
-    background-color: #d4edda;
-    color: #155724;
-}
-
-.warning {
-    background-color: #fff3cd;
-    color: #856404;
-}
-
-.danger {
-    background-color: #f8d7da;
-    color: #721c24;
-}
-
-/* Animación al seleccionar una respuesta */
-input[type="radio"]:checked + label {
-    animation: pulse 0.3s ease;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-/* Animación para cambiar de página de preguntas */
-@keyframes slideIn {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes slideOut {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(-100%); opacity: 0; }
-}
-
-/* Estilo y animación para la recomendación */
-.result {
-    display: none;
-    animation: fadeIn 1s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 .answer {
@@ -131,4 +55,82 @@ input[type="radio"]:checked + label {
     background-color: #28a745;
     color: #ffffff;
     border-color: #28a745;
+}
+
+.result {
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.safe {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.question img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; /* Ajusta el valor según el tamaño deseado */
+    display: block;
+    margin: 10px auto;
+}
+.questionnaire-container {
+    max-width: 600px;
+    width: 90%; /* Cambia el ancho al 90% para pantallas más pequeñas */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.question img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .questionnaire-container {
+        font-size: 16px; /* Reduce la tipografía para pantallas medianas */
+    }
+
+    .answer {
+        padding: 8px 16px; /* Ajusta el tamaño de los botones */
+    }
+}
+
+@media (max-width: 480px) {
+    .questionnaire-container {
+        font-size: 14px; /* Reduce la tipografía para pantallas pequeñas */
+    }
+
+    .answer {
+        padding: 6px 12px;
+    }
+
+    #resultDiv {
+        font-size: 18px; /* Ajusta la tipografía del resultado */
+    }
 }
