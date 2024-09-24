@@ -11,14 +11,14 @@ const questions = [
     { text: "¿Ha tenido infecciones frecuentes?", image: null },
     { text: "¿Ha notado bultos en alguna parte del cuerpo?", image: "https://www.elblogdetubebe.com/wp-content/uploads/2018/04/ganglio-inflamado-cuello-lado-derecho.jpg" },
     { text: "¿Presenta problemas para respirar?", image: null },
-    { text: "¿Tiene ojos o piel amarillentos?", image: "https://example.com/ictericia.png" },
+    { text: "¿Tiene ojos o piel amarillentos?", image: "http://www.sanatorioallende.com/wp-content/uploads/2022/05/Imagen-1-Hepatitis-Aguda-en-ninos-1024x684.jpg" },
     { text: "¿Presenta dificultad para ver?", image: null },
-    { text: "¿Ha tenido dolor de cabeza constante?", image: "https://example.com/dolor-cabeza.png" },
-    { text: "¿Ha notado manchas moradas en la piel?", image: "https://example.com/manchas.png" },
-    { text: "¿Tiene dificultad para caminar?", image: "https://example.com/dificultad-caminar.png" },
-    { text: "¿Ha experimentado vómitos frecuentes?", image: "https://example.com/vomitos.png" },
-    { text: "¿Tiene dolor abdominal persistente?", image: "https://example.com/dolor-abdominal.png" },
-    { text: "¿Ha notado cambios en el equilibrio o la coordinación?", image: "https://example.com/equilibrio.png" }
+    { text: "¿Ha tenido dolor de cabeza constante?", image: null },
+    { text: "¿Ha notado manchas moradas en la piel?", image: "https://www.druni.es/blog/wp-content/uploads/2024/04/Manchas-moradas-piel-PORTADA-080424-800x427.jpg" },
+    { text: "¿Tiene dificultad para caminar?", image: null },
+    { text: "¿Ha experimentado vómitos frecuentes?", image: null },
+    { text: "¿Tiene dolor abdominal persistente?", image: "https://www.generali.es/blog/tuasesorsalud/wp-content/uploads/2021/05/C%C3%B3mo-aliviar-el-dolor-de-barriga-en-ni%C3%B1os.jpeg" },
+    { text: "¿Ha notado cambios en el equilibrio o la coordinación?", image: null }
 ];
 
 
