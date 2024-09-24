@@ -98,13 +98,13 @@ function showResult() {
 
         let resultMessage = "";
         if (yesCount >= 10) {
-            resultMessage = "Recomendación: Consulte a un médico de inmediato.";
+            resultMessage = "Es importante que visite a un médico lo antes posible para una evaluación. Algunos síntomas indican que puede requerir atención inmediata.";
             resultDiv.classList.add("danger");
         } else if (yesCount >= 5) {
-            resultMessage = "Recomendación: Consulte a un médico.";
+            resultMessage = "Recomendamos que consulte a un médico para un chequeo detallado. No es urgente, pero es importante verificar estos síntomas.";
             resultDiv.classList.add("warning");
         } else {
-            resultMessage = "No parece haber riesgo inmediato.";
+            resultMessage = "No parece haber indicios preocupantes, pero si observa algún cambio, siempre es buena idea consultar a un especialista para tranquilidad.";
             resultDiv.classList.add("safe");
         }
 

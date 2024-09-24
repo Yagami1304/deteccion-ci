@@ -134,3 +134,12 @@ h1 {
         font-size: 18px; /* Ajusta la tipografía del resultado */
     }
 }
+#resultDiv {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffeb3b;
+    font-size: 135%; /* Incrementa el tamaño del texto del resultado */
+    animation: fadeIn 0.5s ease;
+    display: none; /* Mantiene el resultado oculto inicialmente */
+}
